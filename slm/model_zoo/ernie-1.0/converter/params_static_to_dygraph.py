@@ -37,7 +37,7 @@ def init_dygraph_with_static(model, static_params_path):
 def main(args):
     logger.info("Loading model: %s" % args.model)
     model = AutoModelForPretraining.from_pretrained(args.model)
-    logger.info("Loading static params and trans paramters...")
+    logger.info("Loading static params and trans parameters...")
     model_dict = init_dygraph_with_static(model, args.path)
     save_name = args.output_path
     if save_name is None:

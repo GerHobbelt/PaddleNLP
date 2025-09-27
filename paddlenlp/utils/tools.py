@@ -25,13 +25,13 @@ from .log import logger
 
 
 def static_params_to_dygraph(model, static_tensor_dict):
-    """Simple tool for convert static paramters to dygraph paramters dict.
+    """Simple tool for convert static parameters to dygraph parameters dict.
 
     **NOTE** The model must both support static graph and dygraph mode.
 
     Args:
         model (nn.Layer): the model of a neural network.
-        static_tensor_dict (string): path of which locate the saved paramters in static mode.
+        static_tensor_dict (string): path of which locate the saved parameters in static mode.
             Usualy load by `paddle.static.load_program_state`.
 
     Returns:
@@ -43,7 +43,7 @@ def static_params_to_dygraph(model, static_tensor_dict):
     ret_dict = dict()
     for n, p in state_dict.items():
         if p.name not in static_tensor_dict:
-            logger.info("%s paramter is missing from you state dict." % n)
+            logger.info("%s parameter is missing from you state dict." % n)
             continue
         ret_dict[n] = static_tensor_dict[p.name]
 
@@ -51,13 +51,13 @@ def static_params_to_dygraph(model, static_tensor_dict):
 
 
 def dygraph_params_to_static(model, dygraph_tensor_dict, topo=None):
-    """Simple tool for convert dygraph paramters to static paramters dict.
+    """Simple tool for convert dygraph parameters to static parameters dict.
 
     **NOTE** The model must both support static graph and dygraph mode.
 
     Args:
         model (nn.Layer): the model of a neural network.
-        dygraph_tensor_dict (string): path of which locate the saved paramters in static mode.
+        dygraph_tensor_dict (string): path of which locate the saved parameters in static mode.
 
     Returns:
         [tensor dict]: a state dict the same as the dygraph mode.
@@ -67,7 +67,7 @@ def dygraph_params_to_static(model, dygraph_tensor_dict, topo=None):
     ret_dict = dict()
     for name, parm in state_dict.items():
         if name not in dygraph_tensor_dict:
-            logger.info("%s paramter is missing from you state dict." % name)
+            logger.info("%s parameter is missing from you state dict." % name)
             continue
 
         tensor = dygraph_tensor_dict[name]

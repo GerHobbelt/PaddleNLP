@@ -291,7 +291,7 @@ class ChineseCLIPConfig(PretrainedConfig):
         projection_dim (`int`, *optional*, defaults to 512):
             Dimentionality of text and vision projection layers.
         logit_scale_init_value (`float`, *optional*, defaults to 2.6592):
-            The inital value of the *logit_scale* paramter. Default is used as per the original ChineseCLIP
+            The inital value of the *logit_scale* parameter. Default is used as per the original ChineseCLIP
             implementation.
         kwargs (*optional*):
             Dictionary of keyword arguments.

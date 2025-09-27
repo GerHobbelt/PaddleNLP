@@ -22,7 +22,7 @@ msgid "tools"
 msgstr ""
 
 #: of paddlenlp.utils.tools.static_params_to_dygraph:1
-msgid "Simple tool for convert static paramters to dygraph paramters dict."
+msgid "Simple tool for convert static parameters to dygraph parameters dict."
 msgstr ""
 
 #: of paddlenlp.utils.tools.dygraph_params_to_static:3
@@ -43,7 +43,7 @@ msgstr ""
 
 #: of paddlenlp.utils.tools.static_params_to_dygraph:7
 msgid ""
-"path of which locate the saved paramters in static mode. Usualy load by "
+"path of which locate the saved parameters in static mode. Usualy load by "
 "`paddle.static.load_program_state`."
 msgstr ""
 
@@ -65,11 +65,11 @@ msgid "返回类型"
 msgstr ""
 
 #: of paddlenlp.utils.tools.dygraph_params_to_static:1
-msgid "Simple tool for convert dygraph paramters to static paramters dict."
+msgid "Simple tool for convert dygraph parameters to static parameters dict."
 msgstr ""
 
 #: of paddlenlp.utils.tools.dygraph_params_to_static:7
-msgid "path of which locate the saved paramters in static mode."
+msgid "path of which locate the saved parameters in static mode."
 msgstr ""
 
 #: of paddlenlp.utils.tools.TimeCostAverage:1

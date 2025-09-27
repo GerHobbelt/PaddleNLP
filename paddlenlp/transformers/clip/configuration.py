@@ -422,7 +422,7 @@ class CLIPConfig(Old2NewPretrainedConfig):
         projection_dim (`int`, *optional*, defaults to 512):
             Dimentionality of text and vision projection layers.
         logit_scale_init_value (`float`, *optional*, defaults to 2.6592):
-            The inital value of the *logit_scale* paramter. Default is used as per the original CLIP implementation.
+            The inital value of the *logit_scale* parameter. Default is used as per the original CLIP implementation.
         kwargs (*optional*):
             Dictionary of keyword arguments.
 
